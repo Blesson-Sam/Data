@@ -1,0 +1,392 @@
+* {
+  margin: 0px;
+  font-family: poppins;
+  padding: 0px;
+}
+
+/* ----------------nav start-------------------- */
+
+a {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+
+
+/* ----------------nav end-------------------- */
+
+/* body */
+
+.header{
+  height: 50vh;
+  /* overflow: hidden; */
+  /* border: 2px solid red; */
+  background-image: url('../styles/bg/ca6.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.header p{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+}
+
+.header p span{
+  color: rgb(68, 207, 68);
+}
+
+ .search-container {
+  position: absolute;
+  bottom: -30px;
+
+  width: 40%;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 11px;
+  background-color: #fff;
+  padding: 0px 20px;
+  padding-right: 0;
+  overflow: hidden;
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.25);
+}
+
+.search-container input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  background-color: #fff;
+}
+
+.btn-common {
+  height: 40px;
+  padding: 0px 20px;
+  border: 2px solid #7f54da;
+  background-color: #7f54da;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.filter-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #c9c9c9;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.filter-container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-container ul li {
+  list-style: none;
+  margin: 0px 20px;
+  cursor: pointer;
+  color: #6c707b;
+}
+
+.filter-container ul li:hover {
+  color: #7f54da;
+}
+
+/* 
+.cards-main-container {
+  width: 80%;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 23%;
+  margin: 10px 1%;
+  margin-bottom: 40px;
+  border-radius: 11px;
+  box-sizing: border-box;
+  transition: 100ms box-shadow ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.img-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 11px 11px 0 0;
+}
+
+.card-img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.product-info {
+  padding: 10px 10px;
+}
+
+.product-info h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.product-info p {
+  font-size: 0.9rem;
+  color: #666666;
+  font-weight: 300;
+}
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.info-bar h2 {
+  font-size: 0.9rem;
+  color: #666666;
+  font-weight: 400;
+} */
+
+.add-btn {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  background: none;
+  border: 2px solid #7f54da;
+  border-radius: 5px;
+  color: #7f54da;
+  transition: 100ms all ease-in-out;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #7f54da;
+  color: white;
+}
+
+
+
+
+/* ---------media queries--------- */
+
+@media only screen and (max-width: 821px) {
+  .cards-main-container {
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 30%;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .add-btn {
+    color: white;
+    background-color: #007bff;
+  }
+}
+
+@media only screen and (max-width: 541px) {
+  .filter-container {
+    width: 90%;
+  }
+
+  .filter-container ul {
+    width: 100%;
+  }
+
+  .filter-container ul li {
+    font-size: 0.9rem;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+    /* border: 2px solid red; */
+    margin: 0;
+  }
+
+  .cards-main-container {
+    width: 90%;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .search-container {
+    width: 90%;
+  }
+
+  /* ----------------nav start-------------------- */
+
+  .ham-menu-container {
+    display: flex;
+  }
+
+  .mobile-nav-container {
+    display: flex;
+    height: 100vh;
+    width: 80vw;
+    position: fixed;
+    background-color: #242424;
+    flex-direction: column;
+    padding: 10% 10%;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    transition: 100ms transform ease-in-out;
+  }
+
+  .mobile-nav-container ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-nav-container ul a {
+    width: 90%;
+  }
+
+  .mobile-nav-container ul a li {
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    width: 100%;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgb(68, 68, 68);
+  }
+
+  .close-btn-container {
+    text-align: right;
+  }
+
+  .close-btn-container span {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .active {
+    color: #7f54da;
+  }
+
+  .hide-nav {
+    transform: translateX(-100%);
+    transition: 100ms transform ease-in-out;
+  }
+
+  .nav-container {
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+
+  .nav-right {
+    display: none;
+    width: 100%;
+  }
+
+  .ham-menu-container span {
+    font-size: 2rem;
+  }
+
+  /* ----------------nav end-------------------- */
+}
+
+@media only screen and (max-width: 415px) {
+  body {
+    width: 100vw;
+  }
+
+  .search-container {
+    width: 80%;
+  }
+
+  .filter-container {
+    height: auto;
+    width: 90%;
+    overflow-x: auto;
+    padding: 20px 0;
+    white-space: nowrap;
+    justify-content: left;
+  }
+
+  .filter-container ul {
+    width: 200%;
+    height: 100%;
+  }
+
+  .filter-container ul li {
+    display: inline-block;
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: rgb(167, 167, 167);
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+    width: 200px;
+  }
+
+  .filter-container ul li:first-child {
+    border-left: 0;
+  }
+
+  .filter-container ul li:last-child {
+    border-right: 0;
+  }
+
+  .cards-main-container {
+    /* border: 2px solid red; */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .card {
+    width: 80%;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .product-info {
+    width: 90%;
+  }
+
+  .add-btn {
+    background-color: #7f54da;
+    color: white;
+  }
+}
